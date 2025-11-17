@@ -14,7 +14,7 @@ while True:
     for(x,y,w,h) in faces:
         cv2.rectangle(frame,(x,y),(x+w,y+h),(255,0,0),2)
     cv2.imshow("face detection-press q to quit",frame)
-    if cv2.waitKey(1)and 0xFF==ord('q'):
+    if cv2.waitKey(1) & 0xFF==ord('q'):
         break
 cap.release()
 cv2.destroyAllWindows
